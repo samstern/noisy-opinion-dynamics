@@ -1,0 +1,1298 @@
+stage_1:
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+  - script_name: 'graphs'
+    params:
+      out_dir: '{OUT_DIR}'
+      direction: undirected
+      num_graphs: '{NUM_GRAPHS}'
+      graph_type: 'erdos_renyi'
+      num_nodes: '{NUM_NODES}'
+      eta: '{ETA}'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+stage_2:
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 0
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 1
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 2
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 4 
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 8
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 16
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.1
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.2
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.3
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.4
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.5
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.6
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.7
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.8
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      model_type: 'degroot'
+      eta: '{ETA}'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
+  - script_name: 'simulate'
+    params:
+      out_dir: '{OUT_DIR}'
+      in_dir: '{OUT_DIR}'
+      save_full: '{SAVE_FULL}' 
+      graph_type: 'erdos_renyi'
+      direction: 'undirected'
+      graph_params:
+        p: 0.9
+        n: {NUM_NODES}
+      num_timesteps: '{NUM_TIMESTEPS}'
+      num_samples: '{NUM_SAMPLES}'
+      eta: '{ETA}'
+      model_type: 'degroot'
+      noise_type: 'global'
+      noise_params:
+        mu: 0
+        sigma_squared: 1
+        beta: 32
